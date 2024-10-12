@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E5E3E4;
+}
+table{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+td{
+    text-align: center;
+}
+img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15pt 15pt;
+}
+figcaption{
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: 5pt;
+    color: #008688;
+}
+caption{
+    font-size: 26pt;
+    margin-bottom: 10pt;
+    margin-top: 10pt;
+    color: #008688;
+}
+figure{
+    border: 2px solid #469597;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}

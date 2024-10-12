@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E5E3E4;
+}
+table{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+td{
+    text-align: center;
+}
+h1{
+    margin: 10pt;
+    color: #008688;
+}
+figure{
+    margin: 0 auto;
+}
+img{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 4pt solid #29a1a3;
+}
+p{
+    margin: 10pt auto;
+    font-size: 16pt;
+    text-align: center;
+    width: 85%;
+    border: 3pt solid #29a1a3;
+    border-radius: 10pt;
+    background-color: #d1d1d1;
+}
+button{
+    width: 100pt;
+    height: 30pt;
+    margin: 10pt;
+    font-size: 11pt;
+    background-color: #29a1a3;
+    border-radius: 10pt;
+}

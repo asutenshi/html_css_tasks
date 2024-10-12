@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    color: darkblue;
+    background-color: #3BA3D0;
+}
+p{
+    border: 2px solid blue
+}
+.girl{
+    color: green
+}
+.men{
+    color: orange
+}
+table{
+    border: 2px solid darkblue;
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 50%;
+}
+td{
+    border: 1px solid blue;
+    padding: 10px
+}
+th{
+    padding: 10px;
+    border: 1px solid blue;
+}
+.top_and_bottom{
+    background-color: gainsboro;
+}
+.mid{
+    background-color: gray;
+}
+.head{
+    background-color: darkcyan;
+}
+.score{
+    text-align: center;
+}

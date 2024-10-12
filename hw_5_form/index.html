@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Опрос первокурсников</title>
+        <link rel="stylesheet" href="./style/style.css" type="text/css">
+    </head>
+    <body>
+        <form id="survey_form">
+            <table class="main_table">
+                <tr class="heading_tr">
+                    <td class="heading_td">
+                        <h1>Опрос первокурсников</h1>
+                        <h2>Что вы думаете об обучении в университете?</h2>
+                    </td>
+                </tr>
+                <tr class="content_tr">
+                    <td class="content_td">
+                        <fieldset id="direction_form">
+                            <label for="dir_list">Выберите своё направление подготовки:</label>
+                            <select name="directions_list" id="dir_list" class="directions_list fields" required>
+                                <option value="1">Прикладная информатика</option>
+                                <option value="2">Управление персоналом</option>
+                                <option value="3">Реклама и связи с общественностью</option>
+                                <option value="4">Сервис</option>
+                                <option value="5">Туризм</option>
+                            </select>
+                        </fieldset>
+                        <fieldset id="addmission_form">
+                            <label for="adm_list">Ваша форма оплаты обучения:</label>
+                            <select name="addmission_list" id="adm_list" class="addmission_list fields" required>
+                                <option value="1">Бюджет</option>
+                                <option value="2">Коммерция</option>
+                                <option value="3">Целевое</option>
+                            </select>
+                        </fieldset>
+                        <fieldset id="subjects_form">
+                            <label for="sub_num">Как вы оцените предметы, изучаемые на нашем факультете?</label>
+                            <input type="number" id="sub_num" class="fields" min="0" max="10" required>
+                        </fieldset>
+                        <fieldset id="building_form">
+                            <label for="build_num">Как вы оцените наш корпус?</label>
+                            <input type="number" id="build_num" class="fields" min="0" max="10" required>
+                        </fieldset>
+                        <fieldset id="difficulty_form">
+                            <label for="difficulty_num">Насколько сложно вам учиться?</label>
+                            <input type="number" id="difficulty_num" class="fields" min="0" max="10" required>
+                        </fieldset>
+                        <fieldset id="gen_impressions_form" oninput="change.value=gen_imp_range.value">
+                            <label for="gen_imp_range">Каковы ваши общие впечатления о вузе?</label>
+                            <div class="imp_container">
+                                <input type="range" name="gen_impression_range" min="0" max="10" id="gen_imp_range" class="gen_impression_range">
+                                <output name="change">-</output>
+                            </div>
+                        </fieldset>
+                        <fieldset id="additionally_form">
+                            <label for="addit_text">Что бы вы хотели добавить?</label>
+                            <textarea name="additionally_text" class="additionally_text fields" id="addit_text"></textarea>
+                        </fieldset>
+                        <fieldset id="email_form">
+                            <label for="email">Оставьте почту для связи:</label>
+                            <input type="email" name="email_text" id="email" class="fields" required>
+                        </fieldset>
+                        <fieldset class="submit_button_form buttons_form">
+                            <input type="submit" value="Отправить" class="submit_button buttons">
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
