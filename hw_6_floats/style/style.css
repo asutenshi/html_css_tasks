@@ -8,7 +8,55 @@ header{
     text-align: center;
 }
 h1{
-    margin: 0;
     color: white;
-
+    margin: 0;
+    font-size: 60px;
+}
+h2{
+    font-size: 30px;
+}
+.main{
+    height: 75%;
+    width: 100%;
+}
+.texts{
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+.content_links{
+    float: right;
+    background-color: gray;
+    height: 95%;
+    width: 25%;
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+}
+li{
+    font-size: 26px;
+    border-bottom: 2px dashed black;
+    margin: 10px 0;
+}
+p{
+    font-size: 22px;
+    margin: 20px 10px;
+}
+footer{
+    background-color: blue;
+    height: 10%;
+    width: 100%;
+}
+.contacts{
+    float: left;
+    border: 2px solid black;
+    width: 350px;
+    height: 60px;
+    background-color: azure;
+    margin-left: 50px;
+    margin-top: 20px;
 }
