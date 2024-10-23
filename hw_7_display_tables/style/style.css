@@ -1,20 +1,82 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-}
-header{
-    display: table;
-    background-color: #b5ce73;
-    width: 100%;
-    height: 40%;
-}
-.menu{
-    display: table;
-    width: 100%;
-    height: 40%;
-    border: 2px solid black;
+    padding: 0;
     box-sizing: border-box;
 }
-.menu_button{
+
+header {
+    display: table;
+    width: 100vw; /* 100% от ширины окна */
+    height: 60vh; /* 60% от высоты окна */
+    background-color: #a4c46f;
+    border: 2px solid black;
+}
+
+.menu {
+    display: table-row;
+    height: 10vh; /* 10% от высоты окна для меню */
+    background-color: #8faf5b;
+    border-bottom: 2px solid black;
+}
+
+.menu_button {
     display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: white;
+    border-right: 2px solid black;
+}
+
+.menu_button:last-child {
+    border-right: none;
+}
+
+.header_content {
+    display: table-row;
+    height: 50vh; /* 50% от высоты окна для контента */
+}
+
+.text_block {
+    display: table-cell;
+    padding: 5%;
+    vertical-align: middle;
+    text-align: left;
+    background-color: #a4c46f;
+    border-right: 2px solid black;
+}
+
+.text_block p {
+    font-size: 1.2vw; /* размер текста адаптируется по ширине окна */
+    color: white;
+    margin-bottom: 2vh;
+}
+
+.text_block button {
+    padding: 1vh 2vw;
+    font-size: 1.2vw;
+    background-color: white;
+    color: #8faf5b;
+    border: none;
+    cursor: pointer;
+}
+
+.image_block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2vw;
+}
+
+.image_item {
+    display: inline-block;
+    margin: 1vw;
+}
+
+.image_item img {
+    width: 15vw; /* адаптивная ширина изображения */
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid black;
 }
