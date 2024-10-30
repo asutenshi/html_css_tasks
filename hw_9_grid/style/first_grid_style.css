@@ -1,45 +1,61 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 .main_container {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
-    box-sizing: border-box;
-    grid-template-columns: 3;
-    grid-gap: 18px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  grid-template-columns: 3;
+  grid-gap: 18px;
 }
 
 .site_header {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border: 2px solid black;
 }
 
 .promo {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid black;
 }
 
 .blog {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: 2px solid black;
 }
 
 .sidebar {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    border: 2px solid black;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border: 2px solid black;
 }
 
 .site_footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    border: 2px solid black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  border: 2px solid black;
+  position: relative;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
 }
