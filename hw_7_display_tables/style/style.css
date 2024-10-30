@@ -1,20 +1,228 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    padding: 0;
 }
 header{
     display: table;
-    background-color: #b5ce73;
     width: 100%;
-    height: 40%;
+    background-color: #b5ce73;
 }
-.menu{
+.header_menu{
     display: table;
     width: 100%;
-    height: 40%;
-    border: 2px solid black;
-    box-sizing: border-box;
+    height: 25%;
+    margin-bottom: 10vh;
 }
 .menu_button{
     display: table-cell;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 25px;
+    font-size: 20px;
+}
+.menu_button:last-child{
+    padding-right: 25px;
+    text-align: right;
+}
+.header_content{
+    display: table;
+    height: 75%;
+    width: 80%;
+    background-color: #92a261;
+    margin-left: auto;
+}
+.content{
+    display: table-cell;
+    width: 33%;
+    vertical-align: middle;
+}
+.content:first-child{
+    padding: 0 10px;
+}
+.content img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.content p{
+    color: white;
+    font-size: 18px;
+}
+.content button{
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+}
+main{
+    width: 100%;
+}
+.main_table{
+    display: table;
+    width: 100%;
+}
+.left_main_cell, .right_main_cell{
+    display: table-cell;
+    width: 50%;
+}
+.genres_table {
+    display: table;
+    margin-right: auto;
+    padding-left: 25px;
+    width: 50%;
+    margin-left: 25px;
+}
+.genres_table h2{
+    margin-bottom: 1vh;
+}
+.genres_row{
+    display: table-row;
+}
+.genres_row div{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    padding: 4px;
+}
+.genres_image img{
+    width: 100%;
+    object-fit: cover;
+}
+.genres_text p{
+    font-size: 18px;
+}
+.last_listen_podcasts_table{
+    display: table;
+    margin-left: auto;
+    width: 50%;
+    margin-right: 25px;
+}
+.last_listen_table{
+    display: table;
+    width: 100%;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-bottom: 3vh;
+}
+.last_listen_table h2{
+    margin-bottom: 1vh;
+}
+.last_listen_row{
+    display: table;
+    width: 100%;
+    background-color: gray;
+    vertical-align: middle;
+    margin-bottom: 1vh;
+}
+.last_listen_row div{
+    display: table-cell;
+    width: 10%;
+    text-align: center;
+}
+.last_listen_row .track_name{
+    width: 70%;
+}
+.last_listen_row .plus{
+    font-size: 22px;
+}
+.last_listen_table h2{
+    text-align: right;
+}
+.podcasts{
+    display: table;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.podcasts h2{
+    margin-bottom: 1vh;
+}
+.podcst_picture{
+    display: table;
+    width: 100%;
+}
+.change_dots{
+    display: table;
+    width: 100%;
+    text-align: center;
+    color: gray;
+    font-size: 26px;
+}
+.pop_playlists_table{
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+.pop_playlists_table h2{
+    margin-bottom: 2vh;
+}
+.playlists{
+    display: table;
+    width: 70%;
+    margin: 0 auto;
+    border-spacing: 6px;
+    margin-bottom: 5vh;
+}
+.playlists div{
+    display: table-cell;
+    width: 20%;
+}
+.playlist_img img{
+    width: 100%;
+    object-fit: cover;
+}
+.playlists .arrow{
+    width: 5%;
+    vertical-align: middle;
+    font-size: 26px;
+    color: gray;
+}
+.left_arrow{
+    text-align: right;
+}
+.right_arrow{
+    text-align: left;
+}
+footer{
+    width: 100%;
+    background-color: #232122; 
+    padding: 5vh 0;
+}
+.footer_table{
+    display: table;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    vertical-align: middle;
+    border-spacing: 10px;
+}
+.footer_cells{
+    display: table-cell;
+    vertical-align: middle;
+    width: 15%;
+}
+.footer_cells:first-child{
+    width: 70%;
+}
+.links_table{
+    display: table;
+    width: 100%;
+}
+.links_row{
+    display: table-row;
+}
+.links_row>div{
+    display: table-cell;
+    width: 25%;
+    text-align: center;
+}
+.footer_panel img{
+    width: 100%;
+    vertical-align: middle;
+   object-fit: cover; 
+}
+.footer_text{
+    text-align: center;
 }
