@@ -1,5 +1,4 @@
-.flex-box{
-    display: flex;
+.flex-box {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
@@ -9,7 +8,7 @@
     /* height: 600px; для демонстрации выравнивания*/
 }
 
-.animal{
+.animal {
     min-height: 200px;
     min-width: 300px;
     background-color: #CCCCCC;
@@ -17,19 +16,22 @@
     margin: 10px;
     text-align: center;
 }
-.cat1{
+
+.cat1 {
     background-image: url("../images/cat1.jpg");
     /* align-self: flex-start; */
     order: 4;
     flex-grow: 2;
 }
-.cat2{
+
+.cat2 {
     background-image: url("../images/cat2.jpg");
     /* align-self: center; */
     order: 6;
     flex-grow: 3;
 }
-.cat3{
+
+.cat3 {
     background-image: url("../images/cat3.jpg");
     order: 2;
     flex-grow: 2;
