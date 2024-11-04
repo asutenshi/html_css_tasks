@@ -1,77 +1,87 @@
-body{
+body {
     margin: 0;
     background-color: green;
 }
-.cards{
+
+.cards_container {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.cards {
     display: inline-block;
     position: relative;
     height: 240px;
     width: 160px;
     background-color: white;
     border: 2px solid black;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
-/* .top_left_content::before{
-    content: attr(data-number) "\A" attr(data-suit);
-    position: absolute;
-    text-align: center;
-    top: 5px;
-    left: 5px;
-    white-space: pre;
-    font-size: 32px;
+
+.cards:hover {
+    transform: translateY(-40px);
 }
-.bottom_right_content::after{
-    content: attr(data-number) "\A" attr(data-suit);
-    position: absolute;
-    white-space: pre;
-    text-align: center;
-    bottom: 5px;
-    right: 5px;
-    transform: rotate(180deg);
-} */
-.center_content{
+
+.center_content {
     position: absolute;
     text-align: center;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-size: 48px;
 }
+
 .top_left_content::before {
-    content: attr(data-number); /* Отображаем только цифру */
+    content: attr(data-number);
     position: absolute;
     text-align: center;
     top: 5px;
-    left: 5px;
+    left: 15px;
     white-space: pre;
-    font-size: 32px; /* Размер цифры */
+    font-size: 32px;
 }
 
 .top_left_content::after {
-    content: attr(data-suit); /* Отображаем только масть */
+    content: attr(data-suit);
     position: absolute;
     text-align: center;
-    top: 40px; /* Отступ для масти */
+    top: 30px;
     left: 10px;
-    font-size: 48px; /* Увеличенный размер масти */
+    font-size: 48px;
 }
 
 .bottom_right_content::before {
-    content: attr(data-number); /* Отображаем только цифру */
+    content: attr(data-number);
     position: absolute;
     white-space: pre;
     text-align: center;
     bottom: 5px;
-    right: 5px;
-    font-size: 32px; /* Размер цифры */
+    right: 15px;
+    font-size: 32px;
     transform: rotate(180deg);
+
 }
 
 .bottom_right_content::after {
-    content: attr(data-suit); /* Отображаем только масть */
+    content: attr(data-suit);
     position: absolute;
     white-space: pre;
     text-align: center;
-    bottom: 40px; /* Отступ для масти */
+    bottom: 30px;
     right: 10px;
-    font-size: 48px; /* Увеличенный размер масти */
+    font-size: 48px;
     transform: rotate(180deg);
+}
+
+.card2 {
+    color: red;
+}
+
+.card4 {
+    color: red;
 }
