@@ -1,0 +1,36 @@
+.flags_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto 0;
+    gap: 20px;
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.ireland {
+    background-image: linear-gradient(to right, #009b48 33%, transparent 33%, transparent 66%, #fc7a02 66%);
+}
+
+.trinidad_and_tobago {
+    background-image: linear-gradient(to right, #ce1127 50%, transparent);
+}
+
+.mauritius {
+    background-image: linear-gradient(to bottom, #eb2839 25%, #1a206e 25%, #1a206e 50%, #fed501 50%, #fed501 75%, #00a551 75%);
+}
+
+.botswana {
+    background-image: linear-gradient(to bottom, #449ed3 32%, transparent 32%, transparent 35%, #000000 35%, #000000 67%, transparent 67%, transparent 70%, #449fd4 70%);
+}
+
+.madagascar {
+    background-image: linear-gradient(to bottom, #fc3e32 50%, #017e3a 50%, #017e3a 50%);
+    background-position: 100px 0;
+    background-repeat: repeat-y;
+}
