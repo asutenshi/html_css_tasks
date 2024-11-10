@@ -32,15 +32,31 @@ p {
     box-shadow: 15px 15px #999999;
 }
 
+.square:nth-child(1):hover {
+    box-shadow: -15px -15px #999999;
+}
+
 .square:nth-child(2) {
     box-shadow: 15px 15px #999999;
 }
 
+.square:nth-child(2):hover {
+    box-shadow: -15px -15px #999999;
+}
+
 .square:nth-child(3) {
+    box-shadow: inset 15px 15px #ffcc99;
+}
+
+.square:nth-child(3):hover {
     box-shadow: inset 15px 15px #996600;
 }
 
 .square:nth-child(4) {
+    box-shadow: inset 15px 15px #ffcc99;
+}
+
+.square:nth-child(4):hover {
     box-shadow: inset 15px 15px #996600;
 }
 
@@ -48,15 +64,23 @@ p {
     box-shadow: 10px 10px 0 10px #999999;
 }
 
+.square:nth-child(5):hover {
+    box-shadow: 10px 10px 20px 10px #999999;
+}
+
 .square:nth-child(6) {
     box-shadow: 10px 10px 0 10px #999999;
 }
 
-.square:nth-child(7) {
+.square:nth-child(6):hover {
+    box-shadow: 10px 10px 20px 10px #999999;
+}
+
+.square:nth-child(7):hover {
     box-shadow: 0px 0px 10px 15px #999999;
 }
 
-.square:nth-child(8) {
+.square:nth-child(8):hover {
     box-shadow: 0px 0px 10px 15px #999999;
 }
 
