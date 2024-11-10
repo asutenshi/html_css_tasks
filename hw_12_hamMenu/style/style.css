@@ -39,6 +39,7 @@ img {
     height: 4px;
     left: 0;
     background-color: white;
+    transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease, background-color 0.3s ease;
 }
 
 .hum_button>span {
@@ -54,6 +55,20 @@ img {
 .hum_button>span::after {
     content: '';
     bottom: -10px;
+}
+
+.hum_check:checked~.hum_button>span::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.hum_check:checked~.hum_button>span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+.hum_check:checked~.hum_button>span {
+    background-color: transparent;
 }
 
 .ham_menu {
