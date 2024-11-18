@@ -94,6 +94,7 @@ p {
     height: 50%;
     border-radius: 20px;
     box-shadow: -10px -10px 10px #999999;
+    z-index: -1;
 }
 
 .square:nth-child(9)::after {
@@ -106,6 +107,19 @@ p {
     height: 50%;
     border-radius: 20px;
     box-shadow: 10px 10px 10px #999999;
+    z-index: -1;
+}
+
+.square:nth-child(9):hover {
+    border: 6px solid orange;
+}
+
+.square:nth-child(9):hover::before {
+    box-shadow: -10px -10px 10px blue;
+}
+
+.square:nth-child(9):hover::after {
+    box-shadow: 10px 10px 10px blue;
 }
 
 .square:nth-child(10)::before {
@@ -117,6 +131,7 @@ p {
     width: 50%;
     height: 50%;
     box-shadow: -10px -10px 10px #999999;
+    z-index: -1;
 }
 
 .square:nth-child(10)::after {
@@ -128,4 +143,17 @@ p {
     width: 50%;
     height: 50%;
     box-shadow: 10px 10px 10px #999999;
+    z-index: -1;
+}
+
+.square:nth-child(10):hover {
+    border: 6px solid orange;
+}
+
+.square:nth-child(10):hover::before {
+    box-shadow: -10px -10px 10px blue;
+}
+
+.square:nth-child(10):hover::after {
+    box-shadow: 10px 10px 10px blue;
 }

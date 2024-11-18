@@ -7,10 +7,23 @@
     gap: 20px;
 }
 
+.flag_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .flag {
     width: 300px;
     height: 200px;
     border: 2px solid black;
+}
+
+.flag_item p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .ireland {
@@ -18,7 +31,11 @@
 }
 
 .trinidad_and_tobago {
-    background-image: linear-gradient(to right, #ce1127 50%, transparent);
+    background-image: linear-gradient(45deg, #ce1127 40%, transparent 40%, transparent 42%, black 42%, black 58%, transparent 58%, transparent 60%, #ce1127 60%, #ce1127 100%);
+}
+
+.republic_of_the_congo {
+    background-image: linear-gradient(135deg, #009543 40%, #fcde4a 40%, #fcde4a 60%, #db241e 60%, #db241e 100%);
 }
 
 .mauritius {
