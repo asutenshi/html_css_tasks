@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+nav ul li span {
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+nav {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu li {
+    background-color: #e6e6e6;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.banners_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: 2% auto;
+}
+
+.banner {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner:nth-child(1) {
+    background-image: url('../images/banners/gifts.jpg');
+}
+
+.banner:nth-child(2) {
+    background-image: url('../images/banners/girlyandi.png');
+}
+
+.banner:nth-child(3) {
+    background-image: url('../images/banners/women.jpg');
+}
+
+.red_label {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%);
+    background-color: red;
+    border-radius: 8px;
+    font-size: 22px;
+    white-space: nowrap;
+    color: white;
+    padding: 0.5vw 1vw;
+}
+
+.popular_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+
+.pop_product {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 200px;
+    margin: 1% 0
+}
+
+.pop_product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.prod_name {
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    margin: 0;
+    margin-top: 5%;
+    font-size: 22px;
+}
+
+.price s {
+    font-size: 18px;
+    color: gray;
+}
+
+.prod_name {
+    margin: 3% 0;
+    font-size: 16px;
+}
+
+.rating {
+    margin: 0;
+    margin-bottom: 3%;
+    font-size: 16px;
+}
+
+.delivery {
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 3%;
+}
+
+p span {
+    color: gray;
+}
+
+.hum_check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .hum_button {
+        display: block;
+        position: fixed;
+        top: 2vh;
+        left: 2vh;
+        width: 34px;
+        height: 34px;
+        z-index: 2;
+    }
+
+    .hum_button>span,
+    .hum_button>span::before,
+    .hum_button>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        background-color: blue;
+        transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease, background-color 0.3s ease;
+    }
+
+    .hum_button>span {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .hum_button>span::before {
+        content: '';
+        top: -10px;
+    }
+
+    .hum_button>span::after {
+        content: '';
+        bottom: -10px;
+    }
+
+    .hum_check:checked~.hum_button>span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .hum_check:checked~.hum_button>span::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    .hum_check:checked~.hum_button>span {
+        background-color: transparent;
+    }
+
+    .menu {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        margin: 0;
+        position: fixed;
+        padding-top: 70px;
+        left: -100%;
+        top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: top 0.3s;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .menu li {
+        width: 80vw;
+        margin-bottom: 10px;
+    }
+
+    .menu li span {
+        font-size: 22px;
+    }
+
+    .hum_check:checked~.menu {
+        left: 0;
+        transition: left 0.3s;
+    }
+
+    .banner {
+        width: 300px;
+        height: 300px;
+        min-width: 100px;
+        min-height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .red_label {
+        font-size: 20px;
+    }
+
+    .banners_container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular_container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
