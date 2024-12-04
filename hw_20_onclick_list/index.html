@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>list</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="level_0">
+            <li><span>IT сферы</span>
+                <ul class="level_1">
+                    <li><span>Программирование</span>
+                        <ul class="level_2">
+                            <li><span>Языки программирования</span>
+                                <ul class="level_3">
+                                    <li><span>Python</span></li>
+                                    <li><span>JavaScript</span></li>
+                                    <li><span>C++</span></li>
+                                </ul>
+                            </li>
+                            <li><span>Фреймворки</span>
+                                <ul class="level_3">
+                                    <li><span>Django</span></li>
+                                    <li><span>React</span></li>
+                                    <li><span>Angular</span></li>
+                                </ul>
+                            </li>
+                            <li><span>Инструменты разработки</span>
+                                <ul class="level_3">
+                                    <li><span>Git</span></li>
+                                    <li><span>Docker</span></li>
+                                    <li><span>VS Code</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Сетевые технологии</span>
+                        <ul class="level_2">
+                            <li><span>Протоколы</span>
+                                <ul class="level_3">
+                                    <li><span>HTTP/HTTPS</span></li>
+                                    <li><span>FTP</span></li>
+                                    <li><span>SSH</span></li>
+                                </ul>
+                            </li>
+                            <li><span>Оборудование</span>
+                                <ul class="level_3">
+                                    <li><span>Роутеры</span></li>
+                                    <li><span>Свитчи</span></li>
+                                    <li><span>Firewall</span></li>
+                                </ul>
+                            </li>
+                            <li><span>Сетевые утилиты</span>
+                                <ul class="level_3">
+                                    <li><span>Wireshark</span></li>
+                                    <li><span>Netstat</span></li>
+                                    <li><span>Ping</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Кибербезопасность</span>
+                        <ul class="level_2">
+                            <li><span>Методы защиты</span>
+                                <ul class="level_3">
+                                    <li><span>Шифрование</span></li>
+                                    <li><span>VPN</span></li>
+                                    <li><span>Антивирусы</span></li>
+                                </ul>
+                            </li>
+                            <li><span>Угрозы</span>
+                                <ul class="level_3">
+                                    <li><span>Вирусы</span></li>
+                                    <li><span>Фишинг</span></li>
+                                    <li><span>DDoS-атаки</span></li>
+                                </ul>
+                            </li>
+                            <li><span>Инструменты</span>
+                                <ul class="level_3">
+                                    <li><span>Metasploit</span></li>
+                                    <li><span>Burp Suite</span></li>
+                                    <li><span>Kali Linux</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        list = document.getElementsByClassName('level_0')[0]
+        list.addEventListener('click', function (event) {
+            if (event.target.nextElementSibling.style.display == 'none') {
+                event.target.nextElementSibling.style.display = 'block'
+            } else {
+                event.target.nextElementSibling.style.display = 'none'
+            }
+        })
+    </script>
+</body>
+
+</html>
