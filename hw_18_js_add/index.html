@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <title>Dinamic list</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-DO лист</h1>
+        <label for="textInput">Введите пункт списка и нажмите добавить или введите пустую строку для очищения
+            списка</label>
+        <input type="text" id="textInput">
+        <button id="submitButton">Добавить</button>
+        <p>Список дел на сегодня:</p>
+        <ul id="list">
+        </ul>
+    </div>
+    <script>
+        textInput = document.getElementById('textInput');
+        submitButton = document.getElementById('submitButton');
+        list = document.getElementById('list');
+
+        submitButton.addEventListener('click', function () {
+            inputValue = textInput.value;
+
+            if (inputValue) {
+                listItem = document.createElement('li');
+                span = document.createElement('span');
+                span.textContent = inputValue;
+
+                list.appendChild(listItem);
+                listItem.appendChild(span)
+            } else {
+                list.innerHTML = '';
+            }
+            console.log(inputValue);
+            textInput.value = '';
+        })
+    </script>
+</body>
+
+</html>
