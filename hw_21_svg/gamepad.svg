@@ -1,0 +1,32 @@
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    height="500px"
+    width="700px">
+    
+    <circle r="150" cx="200" cy="350" fill="#cccccc"/>
+    <circle r="150" cx="550" cy="350" fill="#cccccc"/>
+    <rect x="200" y="200" width="350" height="225" fill="#cccccc"/>
+
+    <circle r="75" cx="200" cy="350" fill="white" stroke="black" stroke-width="2"/>
+    <circle r="75" cx="550" cy="350" fill="white" stroke="black" stroke-width="2"/>
+
+    <circle r="20" cx="510" cy="350" fill="yellow" stroke="black" stroke-width="2"/>
+    <circle r="20" cx="590" cy="350" fill="green" stroke="black" stroke-width="2"/>
+    <circle r="20" cx="550" cy="390" fill="blue" stroke="black" stroke-width="2"/>
+    <circle r="20" cx="550" cy="310" fill="red" stroke="black" stroke-width="2"/>
+
+    <polygon points="142.5, 367.5 167.5, 367.5 192.5, 350 167.5, 332.5 142.5, 332.5 " style="fill:gray;stroke:black;stroke-width:1"/>
+    <polygon points="142.5,367.5 167.5,367.5 192.5,350 167.5,332.5 142.5,332.5" 
+         style="fill:gray;stroke:black;stroke-width:1" 
+         transform="scale(-1, -1) translate(-400, -700)"/>
+    <polygon points="217.5, 292.5 217.5, 317.5 200, 332.5 182.5, 317.5 182.5, 292.5 " style="fill:gray;stroke:black;stroke-width:1"/>
+    <polygon points="217.5,292.5 217.5,317.5 200,332.5 182.5,317.5 182.5,292.5" 
+         style="fill:gray;stroke:black;stroke-width:1" 
+         transform="scale(-1, -1) translate(-400, -700)"/>
+
+    <rect x="367.5" y="50" width="15" height="150" fill="black"/>
+   </svg>
+
