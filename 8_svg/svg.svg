@@ -1,0 +1,13 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    height="400px"
+    width="500px">
+    
+    <line x1="50" y1="50" x2="400" y2="50" stroke="#12dd56" stroke-width="5"/>
+    <circle r="50" cx="200" cy="200" fill="orange" stroke="black" stroke-width="5"/>
+    <polygon points="70,5 90,41 136,48 103,80 111,126
+    70,105 29,126 36,80 5,48 48,41" fill="blue"/>
+</svg>
+

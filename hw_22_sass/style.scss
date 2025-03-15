@@ -1,0 +1,29 @@
+$n: 24;
+
+%flex_center_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: inline-block;
+  border: 2px solid black;
+  padding: $n $n*2;
+  margin-left: 50%;
+  transform: translateX(-50);
+}
+
+.card1 {
+  @extend %flex_center_column;
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.card2 {
+  @extend %flex_center_column;
+}

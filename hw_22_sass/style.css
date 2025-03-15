@@ -1,0 +1,21 @@
+.card2, .card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  display: inline-block;
+  border: 2px solid black;
+  padding: 24 48;
+  margin-left: 50%;
+  transform: translateX(-50);
+}
+
+.card1 img {
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
